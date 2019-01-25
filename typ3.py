@@ -50,16 +50,20 @@ def languageFeatures(filename):
     personalpronouns = [word for word,pos in tagged_text if pos == 'PRP']
 
 
-
-
-
-
-
-
     num_chars = len(chars)
     num_words = len(words)
     num_vocab = len(set(words))
     num_sents = len(sents)
+    
+    num_propernouns = len(propernouns)
+    num_adjectives = len(adjectives)
+    num_foreignwords = len(foreignwords)
+    num_propositions = len(propositions)
+    num_nouns = len(nouns)
+    num_adverbs = len(adverbs)
+    num_verbs = len(verbs)
+    num_personalpronouns = len(personalpronouns)
+
 
     awl = round(num_chars/num_words)
     asl = round(num_words/num_sents)
